@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width,maximum-scale=2">
+    <meta name="description" content="MSGARCH : MSGARCH GSOC project">
+    <link rel="shortcut icon" type="image/x-icon" href="https://github.com/keblu/MSGARCH/blob/master/favicon.ico?raw=true">
+    <link rel="shortcut icon" type="image/png" href="https://github.com/keblu/MSGARCH/blob/master/favicon.png?raw=true">
+    <link rel="shortcut icon" type="image/png" sizes="96x96" href="https://github.com/keblu/MSGARCH/blob/master/favicon-96x96.png?raw=true">
+    <link rel="shortcut icon" type="image/png" sizes="32x32" href="https://github.com/keblu/MSGARCH/blob/master/favicon-32x32.png?raw=true">
+    <link rel="stylesheet" type="text/css" media="screen" href="/MSGARCH/assets/css/style.css?v=7a8bbfefff1135ee9ff99be43501c7b228c12ef3">
+
+<!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>MSGARCH | MSGARCH GSOC project</title>
+<meta property="og:title" content="Markov-switching GARCH models in R" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="MSGARCH GSOC project" />
+<meta property="og:description" content="MSGARCH GSOC project" />
+<link rel="canonical" href="http://keblu.github.io/MSGARCH/" />
+<meta property="og:url" content="http://keblu.github.io/MSGARCH/" />
+<meta property="og:site_name" content="MSGARCH" />
+<script type="application/ld+json">
+{"name":"MSGARCH","description":"MSGARCH GSOC project","author":null,"@type":"WebSite","url":"http://keblu.github.io/MSGARCH/","image":null,"publisher":null,"headline":"MSGARCH","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/keblu/MSGARCH">View on GitHub</a>
+          <h1 id="project_title">Markov-switching GARCH models in R</h1>         
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+   <center> 
+      <img src="https://github.com/keblu/MSGARCH/blob/master/hexmsgarch_large.png?raw=true" width="50%" height="50% align="middle" style="border:none;background:none;">
+   </center>                                                                                                          
+<p><a href="https://cran.r-project.org/package=MSGARCH"><img src="http://www.r-pkg.org/badges/version/MSGARCH" alt="CRAN" /></a> <a href="http://www.r-pkg.org/pkg/MSGARCH"><img src="http://cranlogs.r-pkg.org/badges/MSGARCH?color=brightgreen" alt="Downloads" /></a><a href="http://www.r-pkg.org/pkg/MSGARCH"><img src="http://cranlogs.r-pkg.org/badges/grand-total/MSGARCH?color=brightgreen" alt="Downloads" /></a>
+
+<h2 id="introduction">Introduction</h2>
+                     
+<p align="justify">Markov-switching GARCH models have become popular to account for regime changes
+in the conditional variance dynamics of financial time series.  
+The R package <code class="highlighter-rouge">MSGARCH</code> (<a href="http://doi.org/10.18637/jss.v091.i04">Ardia et al., 2019</a>) 
+implements Markov-switching GARCH-type models very efficiently by using C++ object-oriented programming techniques.
+It allows the user to perform simulations as well as Maximum Likelihood and MCMC/Bayesian estimations of a very large class of Markov-switching GARCH-type models. The package also provides methods to make single-step and multi-step ahead forecasts of the complete conditional density of the variable of interest. Risk management tools to estimate conditional volatility, Value-at-Risk and Expected Shortfall are also available.</p>
+<div style="text-align:center">                     
+<iframe width="560" height="315" src="https://www.youtube.com/embed/h2pCpMYBIZQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div>
+<h2 id="installation">Installation</h2>
+
+<p>The latest stable version of <code class="highlighter-rouge">MSGARCH</code> is available on <a href=https://CRAN.R-project.org/package=MSGARCH>CRAN</a> and can be installed via:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>  R &gt; install.packages("MSGARCH")
+</code></pre>
+</div>
+
+<p>To install the latest development  version of <code class="highlighter-rouge">MSGARCH</code> (which may contain bugs!) use these lines:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>  R &gt; install.packages("devtools")
+  R &gt; require("devtools")
+  R &gt; devtools::install_github("keblu/MSGARCH", subdir="Package")
+</code></pre>
+</div>
+        
+<h2 id="references">References</h2>
+
+<p>Please cite <code class="highlighter-rouge">MSGARCH</code> in publications:</p>
+                                              
+<p>Ardia, D., Bluteau, K., Boudt, K., Catania, L., Trottier, D.-A. (2019).<br />
+<em>Markov-switching GARCH models in R: The MSGARCH package</em>.<br />
+Journal of Statistical Software, Vol 91, Issue 4, pp. 1-38.<br />                                             
+<a href=http://doi.org/10.18637/jss.v091.i04>http://doi.org/10.18637/jss.v091.i04</a></p>
+
+<p>Ardia, D., Bluteau, K., Boudt, K., Catania, L. (2018).  <br />
+<em>Forecasting risk with Markov-switching GARCH models: A large-scale performance study</em>.  <br />
+International Journal of Forecasting, Vol 34, Issue 4, pp. 733-747.<br />                                             
+<a href=https://doi.org/10.1016/j.ijforecast.2018.05.004>https://doi.org/10.1016/j.ijforecast.2018.05.004</a></p>
+
+<p>Ardia, D., Bluteau, K., Ruede, M. (2019).  <br />
+<em>Regime changes in Bitcoin GARCH volatility dynamics</em>. <br />
+Finance Research Letters, Vol 29, pp. 266-271. <br />                                           
+<a href=https://doi.org/10.1016/j.frl.2018.08.009>https://doi.org/10.1016/j.frl.2018.08.009</a></p> </p>
+                                             
+<h2 id="references">Core Team</h2>  
+        
+<div style="clear: both"> 
+     <div>
+          <a href="https://www.hec.ca/profs/david.ardia.html">
+               <h4>David Ardia (HEC Montréal)</h4>
+          </a>
+     </div>
+</div>
+                                                                   
+<div style="clear: both">
+     <div>
+          <a href="http://www.kevenbluteau.com">
+                      <h4>Keven Bluteau (University of Neuchâtel)</h4>
+          </a>
+     </div>
+</div>
+        
+<div style="clear: both">
+     <div>
+          <a href="https://www.linkedin.com/in/kris-boudt-44b20313/">
+                     <h4>Kris Boudt (Ghent University, VUB, VUA)</h4>
+          </a>  
+     </div>
+</div>
+        
+<div style="clear: both">
+     <div>
+          <a href="https://www.linkedin.com/in/leopoldo-catania-1a515061/">
+                    <h4>Leopoldo Catania (Aarhus University)</h4>
+          </a>
+     </div>
+</div>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        
+        <p class="copyright">MSGARCH maintained by <a href="https://github.com/keblu">Keven Bluteau</a></p>
+        
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+  </body>
+</html>
